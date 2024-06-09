@@ -2,7 +2,13 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 fn main() {
+  #[tauri::command]
+  fn greet(name: &str) {
+    println!("Hello, {}! You've been greeted from Rust!", name)
+  }
+
   tauri::Builder::default()
+    .invoke_handler(tauri::generate_handler![greet])
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
 }
