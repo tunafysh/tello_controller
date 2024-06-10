@@ -40,7 +40,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tunafysh.tello-controller",
+      "identifier": "com.tunafysh.trc",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
