@@ -1,4 +1,3 @@
-import { invoke } from "@tauri-apps/api/tauri";
 import { Button } from "./ui/button";
 import Image from "next/image"
 
@@ -6,7 +5,7 @@ export default function Main({ terminal }: { terminal: boolean }) {
     return (
         <div className={`flex justify-around items-center ${terminal ? "h-3/6" : "h-full"}`}>
         <div >
-          <Image src={"tello.jfif"} width={600} height={600}/>
+          {/* <Image src={"tello.jfif"} width={600} height={600}/> */}
         </div>
         <div className="flex flex-col">
           <p>drone info n stuff</p>

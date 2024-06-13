@@ -2,11 +2,8 @@
 
 
 import { Button } from "@/components/ui/button";
-import { invoke } from "@tauri-apps/api/tauri";
-import { FitAddon } from "xterm-addon-fit"
 import Main from "@/components/cpanel";
-import { useCallback, useEffect, useRef, useState } from "react";
-import { XTerm } from "xterm-for-react";
+import { useCallback, useEffect, useState } from "react";
 
 export default function Home() {
   const [ terminal, setTerminal ] = useState(false);
