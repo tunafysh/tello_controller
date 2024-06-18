@@ -1,4 +1,6 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, ipcMain } = require("electron");
+const Tello = require("@harleylara/tello-js")
+const wifi = require("node-wifi")
 const path = require("path");
 
 const appServe = import("electron-serve").then(({ serve }) => {  
@@ -28,6 +30,14 @@ const createWindow = () => {
     });
   }
 }
+
+// wifi.init({
+//   iface: null
+// });
+
+// ipcMain.on('connect', () => {
+  
+// })
 
 app.on("ready", () => {
     createWindow();
